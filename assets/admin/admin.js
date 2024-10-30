@@ -69,7 +69,7 @@
             let otbtn = document.getElementById('chbtn');
 
         document.getElementById('adminId').addEventListener('input',function(){
-           if(adminfield.value === `${localStorage.getItem('AdminId')}`){             //yaha per local storage se get karenge
+           if(adminfield.value === `${localStorage.getItem('email')}`){             //yaha per local storage se get karenge
                 otbtn.setAttribute('value','Send OTP');
                 otbtn.style="display: block !important;"
                 otbtn.setAttribute('type','button');
@@ -139,7 +139,7 @@
                                         }
 
                                     if(cp1 == cp2 && cp1 != "" && cp2 != ""){
-                                        localStorage.setItem('AdminPass',cp2);
+                                        localStorage.setItem('pas',cp2);
                                         document.querySelector('.finalbtn').removeAttribute('disabled');
                                         // save data in local storage
                                         form2.style="display:none;"
