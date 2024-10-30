@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\all.min.css">
+    
+
+</head>
+<body>
+     <header class="header">
+        <a href="#" class="header_logo">PayDrill</a>
+        <div class="header_toggle " >
+            
+            <i class="fa-solid fa-bars" id="header-toggle" onclick="showMenu('header-toggle','nav-menu')"></i>
+        </div>
+        <nav class="nav "  id="nav-menu" >
+            <div class="nav_content bd-grid " >
+                <a href="home" class="nav_perfil">
+                    <div class="nav_img p-2" style="border:3px solid #ab834d ">
+                        <img src="assets/images/logotemp.png" alt="" class="img-fluid ">
+                    </div>
+                    <div>
+                        <span class="nav_name" style=" color:#AB834D; margin-left: 6px; ">PayDrill Management</span>
+                         <!-- <span class="nav_name">ayroll</span>  -->
+
+                    </div>
+                </a>
+                <div class="nav_menu " >
+                    <ul class="nav_list ">
+                        <li class="nav_item"><a href="#" class="nav_link active"> <i class="fa-solid fa-house"></i> Home</a></li>
+                        <li class="nav_item "> <a href="assets/admin/Login.html" class="nav_link"><i class="fa-solid fa-user-tie"></i> Admin</a></li>
+                        <li class="nav_item" onclick="employee()"><a style="cursor: pointer;" class="nav_link"> <i class="fa-solid fa-circle-user"></i> Employee</a></li>
+                         <!-- <li class="nav_item"><a href="#" class="nav_link"><i class="fa-solid fa-arrow-right-to-bracket"></i> LogIn</a></li>  -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>  
+    <main>
+        <section id="home" >
+            <section  id="intro">
+                <div class="conatainer-fluid background img-fluid d-flex flex-column justify-content-center align-items-center mt-0">
+                    <div class="bluegrid"></div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 ">
+                            <!-- <center><h1 style="display: flex;" class="head ">Payroll made easy, scalable, and compliant</h1></center> -->
+                           <h1 class="  head pt-md-4 mt-lg-3" style="position: absolute !important; color:#AB834D ;">Payroll made easy, scalable, and compliant</h1>
+                            <h3 class="head1  pt-2 px-2 " >Transform outdated payroll practices and build a better workplace for your business with  Payroll.</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="row ">
+                        <div class="col-6 d-flex justify-content-center align-items-center "><img src="assets/images/laptop.png" alt="" class=" px-3 img-fluid laptop"></div>
+                         
+                    </div>
+                </div>
+            </section>
+            <section id="about" >
+                <div class="container-fluid featurebg">
+                    <div class="row ms-lg-5  ">
+                        <div class="col-lg-6 featuredesc  pt-5 pt-lg-5 my-lg-auto ">
+                            <h4 style="color:#AB834D;" >EFFORTLESS PAYROLL</h4>
+                            <h5 style="color:#AB834D;"class="pt-3">Everything you need to manage your people, rolled into one</h5>
+                            <h1 style="color:#d8dedf;">A blend of orthodox and smart features</h1>
+                            <p class="p-3" style="color:#AB834D;">Experience the Convenience of Our Hassle-Free and Seamless Payroll Management for Smooth Operations.</p>
+
+                            <button class="explore"><a href="#featurecontent" style="color:#0c2225;">Explore More</a></button>
+                        </div>
+                        <div class="col-lg-6  col-12 d-flex justify-content-center align-items-center my-lg-auto  mt-3 pt-lg-5">
+                            <img src="assets/images/feature.png" alt="" class="img-fluid my-3 pt-5  mt-md-4 mx-auto mx-md-0 feature">
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="featurecontent" >
+                <div class="container-fluid  background2 mx-0 gx-0">
+                    <div class="bluegrid2">
+                        <div class="row mx-0 gx-0 justify-content-center mt-4">
+                            <div class="col-lg-8 mx-0 gx-0 px-0 text-center">
+                                <h1 class="display-6  mt-lg-3  fw-bold" style="color:#0c2225;">Designed for Excellence – Features That Keep You Ahead of the Curve!</h1>
+                                <h5 class="fs-5 mt-1 mt-lg-2" style="color: #AB834D;">The Future of Payroll is Here – Effortless,Accurate, Timely, and Hassle-Free – Payroll Made for Modern Businesses.</h5>
+                            </div>
+                        </div>
+                        <div class="row  mx-2 align-items-center mt-lg-2 mt-3">
+                            <div class="col-lg-4  ">
+                                <div class="row mt-lg-2">
+                                    <div class="col-lg-12  p-lg-4   mt-lg-3 text-center  align-items-center " >
+                                        <div class="card cardc " style="width: auto;">
+                                            <div class="card-body">
+                                              <h5 class="card-subtitle text-muted"><i class="fa-solid fa-square-check icon"></i></h5>
+                                              <h3 class="card-title mb-2 ">Accuracy and Efficiency:</h3>
+                                              <p class="card-text">Manual payroll process is prone to errors resulting inaccurate payments causing legal
+                                                 complications. An automated payroll 
+                                                system reduces the chances of human errors in calculations & data entry.</p>
+
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-12  p-lg-4   my-2 text-center  align-items-center " >
+                                        <div class="card cardc " style="width: auto;">
+                                            <div class="card-body">
+                                              <h5 class="card-subtitle text-muted"><i class="fa-solid fa-image-portrait icon"></i></h5>
+                                              <h3 class="card-title mb-2">Employee Self-Service:</h3>
+                                              <p class="card-text">payroll systems provide employees with self-service portals where they can view their  payroll-related information.
+                                                 This empowers employees to access and manage their data independently.</p>
+                                             
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4   text-center   "> <img src="assets/images/ruppee.png" class="img-fluid ruppee" alt=""></div>
+                            <div class="col-lg-4 ">
+                                <div class="row">
+                                    <div class="col-lg-12  p-lg-4  text-center  align-items-center " >
+                                        <div class="card cardc " style="width: auto;">
+                                            <div class="card-body">
+                                              <h5 class="card-subtitle text-muted"><i class="fa-solid fa-clock icon "></i></h5>
+                                              <h3 class="card-title mb-2 ">Saves Time:</h3>
+                                              <p class="card-text">Processing payroll manually can be time-consuming, especially for businesses with many employees.
+                                                This frees up precious time for HR & finance personnel to focus on other essential tasks.
+                                              </p>
+                                        
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-12  p-lg-4   my-2   text-center  align-items-center " >
+                                        <div class="card cardc " style="width: auto;">
+                                            <div class="card-body">
+                                              <h5 class="card-subtitle text-muted"><i class="fa-solid fa-shield-halved icon "></i></h5>
+                                              <h3 class="card-title mb-2">Enhanced Data Security:</h3>
+                                              <p class="card-text">A reliable payroll system offers secure storage, 
+                                                protecting sensitive employee information from unauthorized access and potential data breaches.</p>
+                                              
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+       
+    </main>
+     <footer >
+       <div class="container-fluid footer">
+        <div class="row ">
+            <div class="col-lg-4  mt-2" >
+                <div class="row gx-0 ">
+                        <div class="col-lg-4  ms-2  ms-md-4 ms-lg-5 ">
+                            <div class="footerlogo d-flex align-items-baseline  mt-4">
+                                <img src="assets/images/logotemp.png"  alt="">
+                                <h5 class="fs-1 logodrill">AYDRILL </h5>
+                            </div>
+                            <div  style="letter-spacing: 1em;color:#AB834D;" class="ms-2"> MANAGEMENT</div>
+                        </div>
+                         <div class=" col-lg-8 ms-2 ms-md-4 ms-lg-5  mt-3 ps-lg-3 text-lg-center "> 
+                            <p class=" " style="color: #d8dedf; ">"Designed For Excellence.The Future of Payroll–Effortless and Hassle-Free Payroll."</p>
+                        </div>
+                </div>
+             </div>
+             <div class="col-lg-4   ms-md-4 ms-lg-0 p-lg-3 text-lg-center my-2 my-lg-3 pt-lg-5  ms-lg-0" style="color: #AB834D;"> 
+                <p  class="fs-4 fw-bold "> Quick Links  </p>
+                <ul  >
+                    <li><a href="#home" style="color: #d8dedf;"> Home</a></li>
+                    <li><a href="#about" style="color: #d8dedf;">About Us</a></li>
+                    <li><a href="featurecontent" style="color: #d8dedf;"> Popular Features</a></li>
+                    <li><a href="admin" style="color: #d8dedf;">Admin</a></li>
+                    <li><a href="employee" style="color: #d8dedf;">Employee</a></li>
+                    <!-- <li><a href="login" style="color: #d8dedf;">Log In</a></li> -->
+                </ul>
+
+             </div> 
+            <div class="col-lg-4   ms-md-4 ms-lg-0 text-lg-center mt-2 mt-lg-5 " style="color: #d8dedf;">
+                <div class="row mt-lg-4">
+                    
+                    <div class="col-lg-12 ">
+                        <p  class="fs-5 fw-bold " style="color: #AB834D;"> Call Us On  </p>
+                        <ul>
+                            <li> Toll Free - 18005726671</li>
+                            <li>(Mon - Fri 9:00 AM - 7:00 PM)</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 mt-2 mt-lg-5">
+                        <h4 style="color: #AB834D;"> Contact Us:</h4>
+                          <p>Support - support@paydrillpayroll.com</p>
+                    </div>
+                </div>
+             </div>
+        <div class="row text-lg-center"> 
+            <div class="ms-md-4 ms-lg-0 text-lg-center">
+                <h5 style="color: #AB834D;" >Connect with us</h5>
+                <ul class="d-flex justify-content-lg-center f-icons ">
+                    <li><button class="linkedin ms-1"><i class="fa-brands fa-linkedin-in"></i></button></li>
+                    <li><button class="instagram ms-1"><i class="fa-brands fa-instagram"></i></button></li>
+                    <li><button class="facebook ms-1"><i class="fa-brands fa-facebook-f"></i></button></li>
+                    <li><button class="youtube ms-1"><i class="fa-brands fa-youtube"></i></button></li>
+                    <li><button class="twitter ms-1"><i class="fa-brands fa-square-x-twitter"></i></button></li>    
+               </ul>
+            </div>
+        <!-- <div class="row " style="background-color: #0c2325;"> <h1></h1></div> -->
+       </div>
+       <div class="row   text-center  mt-4">
+           <div class="col-lg-12 text-center ">
+                <h6 style="color: black;">© 2024 Payroll Management System. All rights reserved. Legal Disclaimer | Privacy Policy | Terms of Use</h6>
+           </div>
+       </div>
+    </footer>
+    
+    
+</body>
+<script>
+        let target = './assets/admin/Login.html';
+       function employee(){
+            localStorage.setItem("emplogin","1");
+            window.location.href= target;
+       }
+</script>
+
+<script type="text/javascript" src="assets\js\bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets\js\main.js"></script>
+<script type="text/javascript" src="assets\js\all.min.js"></script>
+
+</html>

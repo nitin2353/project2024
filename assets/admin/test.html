@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Footer Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styling for footer navbar */
+    .footer-navbar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40; /* Dark background */
+    }
+    .footer-navbar .nav-item .nav-link {
+      color: white;
+      font-size: 16px;
+    }
+    .footer-navbar .nav-item .nav-link:hover {
+      color: #f8f9fa; /* Lighter color on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Navbar -->
+  <nav class="navbar navbar-expand navbar-dark footer-navbar">
+    <ul class="navbar-nav mx-auto">
+      <!-- Home Button -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-home"></i>
+          <span class="d-block">Home</span>
+        </a>
+      </li>
+      <!-- Search Button -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-search"></i>
+          <span class="d-block">Search</span>
+        </a>
+      </li>
+      <!-- Notifications Button -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-bell"></i>
+          <span class="d-block">Notifications</span>
+        </a>
+      </li>
+      <!-- Profile Button -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-user"></i>
+          <span class="d-block">Profile</span>
+        </a>
+      </li>
+      <!-- Settings Button -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-cog"></i>
+          <span class="d-block">Settings</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

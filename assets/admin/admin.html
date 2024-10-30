@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin Pannel</title>
+</head>
+<body onloa="loadpage()">
+    <div class="loading2 mt-5" style="margin-top: 20% !important;">
+        <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+          <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+          <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+          <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+          <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+        </svg>
+    </div>
+    <div class="container-fluid mt-0 ">
+            <div class="row text-center" >
+                <center><h1 class="maintext" style="display: block; color: #AB834D; letter-spacing: 40; font-size: 60px; font-weight: 900;">ADMIN PANNEL</h1></center>
+            </div>
+            <div class="row">
+                <div class="col-lg-3  col-md-3 col-sm-3 pt-3" style="border: 2px solid black; height: 34vw;" id="prot-btn" >
+                    <ul>
+                        <li><button onclick="dashboard()" id="b1">Dashboard</button></li>
+                        <li><button onclick="addemp()" id="b2">Add Employee</button></li>
+                        <!-- <li><button onclick="empsal()" id="b3">Employee Salary</button></li>
+                        <li><button onclick="emple()" id="b4">Employee Leaves</button></li> -->
+                        <li><button onclick="chpas()" id="b5">Change Password</button></li>
+                    </ul>
+                </div>
+        <!-- for Dashboard   -->
+                <div class="col-lg-9 col-md-9 col-sm-9 p-0 " style="border: 2px solid black; background-color: black !important;" id="dashboard" >
+                    <!-- <a href="../../dashboard.html"><button onclick="dashboard()" style="position: absolute; top:  48% !important; height: 50px; width: 50%; margin-top: -4%; z-index: 4; border-radius: 10px; background-color: #AB834D; font-weight: 700;">Dashboard</button></a> -->
+                    <h1 class="d-flex" style="position: absolute;">CLICK HERE FOR DASHBOARD</h1>
+                    <img src="/assets/images/dashboardbg.png" onclick="dashboard()" class="img-fluid" alt="" style="border: 2px solid black; height: 100%; width: 130wh; opacity: 40%; filter: blur(5px)">
+                </div>
+        <!-- for Dashboard   -->
+        <!-- add employee -->
+                <div class="col-lg-9 col-md-9 col-sm-9 " style="border: 2px solid black; height: 105%;"  id="addemp">
+                      <div class="row text-black texts" style="border: 1px solid black; height: 318px; overflow-y: scroll; " id="tc">
+                        <h3 style="color: wheat; text-decoration: underline; ">Terms and Conditions for Account Creation:</h3>  
+                        <p>1. Account Eligibility: Users must be at least 18 years old to create an account. By signing up, you confirm that all information provided is accurate and up-to-date.
+                        </p>
+                        <p>2. Account Security: You are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account.</p>
+                        <p>3. User Conduct: Users agree to use the account solely for lawful purposes and not engage in any fraudulent, harmful, or malicious activities.</p>
+                        <p>4. Termination of Account: We reserve the right to suspend or terminate accounts at our discretion, especially in cases of violation of these terms or suspected misuse.</p>
+                        <p>5. Privacy: Personal data provided during account creation will be handled as per our Privacy Policy. We are committed to protecting your data and will not share it without consent.</p>
+                        <p>6. Changes to Terms: These terms may be updated periodically. It is your responsibility to review them regularly to stay informed of any changes.</p>
+                        <p>7. Liability: The company is not liable for any loss or damage arising from unauthorized access or use of your account.</p>
+                        <p>8. Governing Law: These terms are governed by the laws applicable in the company's jurisdiction.
+                            By creating an account, you agree to abide by these terms.</p>
+                        <p class="justify-content-end">Thank You..............</p>
+                    </div>
+                    <div class="row" style="height: 31.2%; border: 1px solid black;" id="tk">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <h1 >SignUp <span><i class="bi bi-arrow-right"></i></span></h1>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 d-flex pt-5" style=" justify-content: end;">
+                            <a href="../admin/epmployeesingnup.html" class="r-btn"><button style="width: 200px; height: 50px; display: flex ">Register New Employee</button></a>
+                        </div>
+                      </div>
+                </div>
+                <!-- For Add Employee -->
+                <!-- for emp Salary -->
+                <div class="col-lg-9 col-md-9 col-sm-9 " style="border: 2px solid black;"  id="empsal">
+                    <div class="row" style="border: 1px solid black; height: 100%;">
+                        <h1>add employee</h1>
+                        
+                        
+                    </div>
+                </div>
+        <!-- for emp Salary -->
+        <!-- for emp Leaves   -->
+                <div class="col-lg-9 col-md-9 col-sm-9 " style="border: 2px solid black;"  id="empleave">
+                    <div class="row" style="border: 1px solid black; height: 100%;">
+                        <h1>emp leave</h1>
+                    </div>
+                </div>
+        <!-- for emp Leaves   -->
+        <!-- for change Password -->
+                <div class="col-lg-9 col-md-9 col-sm-9"  id="chpass">
+                    <div class="row chpass" style="border: 1px solid black; height: 100%; width: 100% !important;">
+                        <center><h3 style="color: black; margin-top: 20px; text-decoration: underline;">CHANGE PASSWORD</h3></center>
+                       <div class="container chbox" style="border: 2px solid black;  height: 70%; max-width: 70%; padding-top: 7% !important; border-radius: 20px; background-color: #214141;">
+                        <form class="form-one">
+                            <label style="color: white; font-weight: 700; margin-top: -20px; font-size: 30px;" class="d-flex justify-content-center">Admin Id</label>
+                            <input class="form-control" type="text"  placeholder="Enter Your Admin-Id" id="adminId" style="height: 50px;">
+                            <br/>
+                            <center><input class="form-control" type="text" placeholder="Enter OTP" id="otp"  style="height: 50px;"></center>
+                            <br/>
+                            <center><input class=" form-control" id="chbtn"  data-bs-toggle="modal" data-bs-target="#exampleModal"></center>
+                        </form>
+
+                        <div>
+                            <div class="loading mt-2">
+                                <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+                                  <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+                                  <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+                                  <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+                                  <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <form class="form-two">
+                            <input type="password" class="form-control" placeholder="Enter New Password" id="cpass1">
+                            <br/>
+                            <br/>
+                            <input type="password" class="form-control" placeholder="Re-Enter Password" id="cpass2">
+                            <br/>
+                            <br/>
+                            <p id="errorMessage" style="color:red; margin-top: -40px;"></p>
+                            <br/>
+                            <center><input type="submit" id="chbtn" style="display: block !important;" disabled class="finalbtn form-control"></center>
+                        </form>
+                        <div class="passdone mt-5 text-center">
+                            <img src="/assets/images/icons8-lock.gif" class="img-fluid d-flex justify-content-center img-lock" style="margin-left: 48%;"/>
+                            <center><label style="color: black; font-size: 25px ; font-weight: 600; margin-top: 10px;">Password Changed</label></center>
+                        </div>  
+                        </div>
+                    </div>
+                </div>
+            <!-- Otp modal -->
+            <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Your OTP is : <p id="showotp"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Click To Copy</button>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            <!-- Otp modal -->
+         <!-- for emp change Password   -->
+            </div>
+
+
+
+            <footer>
+                <nav class="navbar navbar-expand navbar-dark footer-navbar">
+                    <ul class="navbar-nav mx-auto">
+                      <!-- Home Button -->
+                      <li class="nav-item" style="border: 2px solid #214141; border-radius: 20px; background-color: #214141   ;">
+                        <a class="nav-link" onclick="dashboard()">
+                          <i class="fas fa-home"></i>
+                          <span class="d-block">Dashboard</span>
+                        </a>
+                      </li>
+                      <!-- Search Button -->
+                      <li class="nav-item" style="border: 2px solid #214141; border-radius: 20px; background-color: #214141   ;">
+                        <a class="nav-link" onclick="addemp()">
+                          <i class="fas fa-search"></i>
+                          <span class="d-block">Add-Emp</span>
+                        </a>
+                      </li>
+                      <!-- Notifications Button -->
+                      <li class="nav-item" style="border: 2px solid #214141; border-radius: 20px; background-color: #214141   ;">
+                        <a class="nav-link" onclick="empsal()">
+                          <i class="fas fa-bell"></i>
+                          <span class="d-block">Emp-Sal</span>
+                        </a>
+                      </li>
+                      <!-- Profile Button -->
+                      <li class="nav-item" style="border: 2px solid #214141; border-radius: 20px; background-color: #214141   ;">
+                        <a class="nav-link" onclick="emple()">
+                          <i class="fas fa-user"></i>
+                          <span class="d-block">Emp-Leave</span>
+                        </a>
+                      </li>
+                      <!-- Settings Button -->
+                      <li class="nav-item" style="border: 2px solid #214141; border-radius: 20px; background-color: #214141   ;">
+                        <a class="nav-link" onclick="chpas()">
+                          <i class="fas fa-cog"></i>
+                          <span class="d-block">Change-Pass</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </footer>
+
+    </div>
+    <script>
+          function dashboard(){
+            alert('done')
+                let tar = "../../dashboard.html";
+                window.location.href = tar;
+           }
+    </script>
+    <script src="admin.js"></script>
+</body>
+</html>

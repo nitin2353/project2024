@@ -1,0 +1,272 @@
+body{
+  margin-top:20px;
+  background-color: #2C5454 !important;
+}
+.account-block {
+  padding: 0;
+  background-image: url('https://happay.com/blog/wp-content/uploads/sites/12/2023/08/payroll-expense.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+.account-block .overlay {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.account-block .account-testimonial {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom:8rem;
+  left: 0;
+  right: 0;
+}
+
+.text-theme {
+  color: #065A6A !important;
+  font-size: 30px !important;
+}
+
+.btn-theme {
+  background-color: #AF8C57 !important;
+  border-color: #AF8C57 !important;
+  color: black !important;
+  display: flex !important;
+}
+.form-control{
+  border-radius: 10px !important;
+  background-color: #065A6A !important;
+  border: none !important;
+  color: white !important;
+}
+.account-testimonial center a{
+  text-decoration: none;
+}
+.account-testimonial center a button{
+  height: 40px;
+  width: 150px;
+  border: none !important;
+  background-color: #BEC1C2 ;
+  opacity: 100%;
+  border-radius: 10px;
+
+}
+bd-grid{
+  max-width:100%;
+  display: grid;
+   grid-template-columns: 100%; 
+   margin-left: 24px; 
+  /* margin-right: 24px; */
+
+}
+/* header */
+.header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:48px;
+   /* padding: 0 16px;  */
+  background-color:#0c2225;
+  z-index: 100;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.header_logo{
+  color:#AB834D;
+  padding-left: 15px;
+}
+.header_toggle{
+  font-size: 30px;
+  cursor: pointer;
+  color:#AB834D;
+  padding-right: 15px
+}
+/* nav */
+@media screen and (min-width:770px){
+  .nav{
+      background-color:rgba(236, 234, 234);
+      
+      backdrop-filter: blur(6px)
+  }
+}
+@media screen and (max-width:769px) {
+  .nav{
+      position: fixed;
+      top: 0;
+      left:-100%;
+      background-color:#0c2225;
+      width:60%;
+      height: 100vh;
+       padding:32px 0;  
+      z-index: 100;
+      transition: .5s;
+      overflow-y: auto;
+  }
+}
+.nav_content{
+  display: flex;
+  flex-direction: column;
+}
+.nav_perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.nav_img{
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height:80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+}
+.nav_img img{
+  width:100px;
+}
+.nav_name{
+  display: block;
+  font-size: 20px;
+  color:#FFF;
+}
+.nav_item{
+  margin-bottom: 32px;
+}
+.nav_link{
+  color:#d8dedf;
+}
+.nav_link:hover{
+  color:#AB834D;
+}
+/* show menu */
+.show{
+  left: 0;
+}
+.active{
+  color:#AB834D;
+}
+/* media queries*/
+@media (min-width:576px) and (max-width:768px){
+  .nav{
+      width:288px;
+
+  }
+}
+@media screen and (min-width: 769px){
+  body{
+      margin:0;
+  }
+  .header{
+      height:64px;
+  }
+   .header_logo,.header_toggle{ 
+      display: none;
+  }
+  .nav{
+      width:100%;
+  }
+  .nav_content{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width:100%;
+  }
+  .nav_perfil{
+      flex-direction: row;
+      text-align: initial;
+      margin-bottom: 0;
+
+  }
+  .nav_img{
+      width: 40px;
+      height:40px;
+      margin-right: 8px;
+      margin-bottom: 0;
+
+
+  }
+  .nav_img img{
+      width: 46px;
+
+  }
+  .nav_name{
+      color:#0c2225;
+      font-weight: 700;
+
+  }
+  .nav_list{
+      display:flex;
+      align-items: center;
+  }
+  .nav_item{
+      margin: 0px 24px  ;
+      padding: 22px 0px  ;
+  }
+  .nav_link{
+      color:#0c2225;
+      font-weight: 600;
+      font-size: 16px;
+  }
+  .nav_link:hover{
+      color:gray;
+  }
+  .active{
+      color:#AB834D;
+  }
+}
+.nav.scrolled {
+  background-color:  rgba(12, 34, 37,0.95);
+}
+.nav.scrolled .nav_name {
+  color: #d8dedf;
+
+}
+.nav.scrolled .nav_link {
+  color: #d8dedf;
+
+}
+.nav.scrolled .active{
+  color:#AB834D;
+}
+
+#admin-singnup{
+  height: 40px; 
+  width: 150px; 
+  border-radius: 10px; 
+  border: none; 
+  font-size: 30x;
+  font-weight: 700;
+  color: black;
+  transition: 0.5s;
+  margin-bottom: -60px !important;
+}
+#admin-singnup:hover{
+  background-color: #AB834D;
+}
+.form-group center button{
+    margin: 10px;
+    display: inline !important;
+    width: 90px;
+}
+#showbtn{
+  display: none !important;
+}
+@media  screen and (max-width:991px) {
+   #showbtn{
+      display: inline !important;
+   }
+}
