@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Login and Registration Form in HTML & CSS | CodingLab </title>
+    <title> Login and Registration Form </title>
     <link rel="stylesheet" href="login.css">
 	<link rel="stylesheet" href="admin.css">
     <!-- Fontawesome CDN Link -->
@@ -135,10 +135,11 @@
 	if(localStorage.getItem('AdminPass')  === password && localStorage.getItem('AdminId') === email){
 		let target = 'admin.html';
 		window.location.href=target;
+	} 
+	else{
+		errorMessage.textContent ="Not Valid";	
 	}
 	
-	
-    
 });
 
 
