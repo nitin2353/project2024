@@ -185,6 +185,20 @@ a{
         color:#AB834D;
     }
 }
+.nav.scrolled {
+    background-color:  rgba(12, 34, 37);
+  }
+.nav.scrolled .nav_name {
+    color: #d8dedf;
+
+}
+.nav.scrolled .nav_link {
+    color: #d8dedf;
+
+}
+.nav.scrolled .active{
+    color:#AB834D;
+}
 .full-height {
 	min-height:100vh;
 	height:100%;
@@ -209,20 +223,7 @@ a{
     width: 100%;
     background-color: rgba(12, 34, 37,0.9);
 }
-.nav.scrolled {
-    background-color:  rgba(12, 34, 37);
-  }
-.nav.scrolled .nav_name {
-    color: #d8dedf;
 
-}
-.nav.scrolled .nav_link {
-    color: #d8dedf;
-
-}
-.nav.scrolled .active{
-    color:#AB834D;
-}
 .head{
     position: absolute;
     top:12%;
@@ -256,7 +257,7 @@ a{
 .featurebg
 {
     background-color: #0c2225;
-    height:100vh;
+    /* height:100vh; */
 }
 .feature{
     height:110% ;
@@ -292,9 +293,9 @@ a{
     .background{
         height:70vh;
     }
-    .featurebg{
+    /* .featurebg{
         height: 90vh;
-    }
+    } */
     
     .bluegrid{
         position: absolute;
@@ -343,9 +344,9 @@ a{
     .background{
         height:70vh;
     }
-    .featurebg{
+    /* .featurebg{
         height: 90vh;
-    }
+    } */
     
     .bluegrid{
         position: absolute;
@@ -395,9 +396,9 @@ a{
     .background{
         height:80vh;
     }
-     .featurebg{
+     /* .featurebg{
         height:90vh;
-     }
+     } */
     .bluegrid{
         position: absolute;
         top:50%;
@@ -448,9 +449,9 @@ a{
         height: 100vh;
 
     }*/
-    .featurebg{
+    /* .featurebg{
         height: 90vh;
-    } 
+    }  */
     
     .bluegrid{
         position: absolute;
@@ -491,13 +492,13 @@ a{
         background-size: cover;
         background-position: center;
         position: relative;
-        height:115vh;
+        height:100vh;
         width: 100%;
 }
 .bluegrid2{
     position: absolute;
     background-color: rgba(12, 34, 37,0.77);
-    height:115vh;
+    height:100%;
     width: 100%;
 }
 .card{
@@ -523,9 +524,31 @@ a{
     color:#0c2225;
 }
 
+/* @media screen and ( max-width: 400px){
+    .background2{
+        height:130vh;
+    }
+    .bluegrid2{
+        height:130vh;
+    }
+} */
 @media screen and ( max-width: 575px){
+   
     .ruppee{
         height: 10vh;
+        /* display:none; */
+    }
+    .design h1{
+        font-size: 20px !important;
+    }
+    .design h5{
+        font-size: 13px !important;
+    }
+    .card-subtitle,.card-title{
+        font-size: 15px !important;
+    }
+    .card-text{
+        font-size: 12px!important;
     }
 }
 @media ( min-width: 576px) and (max-width: 767px){

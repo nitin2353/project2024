@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #2C5454;
+    background: #2C5454 !important;
 }
 .container{
     position: relative;
@@ -181,4 +181,10 @@ form .buttons button , .backBtn{
     border: 2px solid black;
     height: 50%;
     width: 50%;
+}
+
+@media screen and (max-width: 750px)  {
+        .sgn{
+            display: none !important;
+        }
 }

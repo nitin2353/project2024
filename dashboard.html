@@ -7,6 +7,8 @@
     <title>dashboard</title>
     <link rel="stylesheet" type="text/css" href="assets\css\bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets\css\all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\all.min.css">
    
     <!-- <link rel="stylesheet" type="text/css" href="assets\css\all.min.css"> -->
     <style>
@@ -95,8 +97,37 @@
     </style>
 
 </head>
-<body>
-	<div class="container-fluid">
+<body onload="putdetails()">
+	<header class="header">
+		<a href="#" class="header_logo">PayDrill</a>
+		<div class="header_toggle " >
+			
+			<i class="fa-solid fa-bars" id="header-toggle" onclick="showMenu('header-toggle','nav-menu')"></i>
+		</div>
+		<nav class="nav "  id="nav-menu" >
+			<div class="nav_content bd-grid " >
+				<a href="home" class="nav_perfil">
+					<div class="nav_img p-2" style="border:3px solid #ab834d ">
+						<img src="../../assets/images/logotemp.png" alt="" class="img-fluid ">
+					</div>
+					<div>
+						<span class="nav_name" style=" color:#AB834D; margin-left: 6px; ">PayDrill Management</span>
+						 <!-- <span class="nav_name">ayroll</span>  -->
+	
+					</div>
+				</a>
+				<div class="nav_menu " >
+					<ul class="nav_list ">
+						<li class="nav_item"><a href="./index.html" class="nav_link active"> <i class="fa-solid fa-house"></i> Home</a></li>
+						<li class="nav_item "> <a href="../../assets/admin/Login.html" class="nav_link"><i class="fa-solid fa-user-tie"></i> Admin</a></li>
+						<li class="nav_item" onclick="employee()"><a style="cursor: pointer;" class="nav_link"> <i class="fa-solid fa-circle-user"></i> Employee</a></li>
+						 <!-- <li class="nav_item"><a href="#" class="nav_link"><i class="fa-solid fa-arrow-right-to-bracket"></i> LogIn</a></li>  -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header> 
+	<div class="container-fluid" style="margin-top: 6%;">
 		<div class="row px-lg-5 px-2  mt-3">
 			<div class="col-lg-12 bg border borderlight text-center   " style="color:#af8d60;">
 				<h1 class="display-4 fw-bold ">PAYROLL DASHBOARD</h1>
@@ -106,7 +137,7 @@
 			<div class="col-lg-8 px-5 bg  me-2" >
 				<div class="row ">
 					<div class="col-lg-3 col-md-6 text-center">
-						<img src="assets/images/employee.png" class="img-fluid" onmousemove="putdetails()">
+						<img src="assets/images/employee.png" class="img-fluid" >
 					</div>
 					<div class="col-lg-9 col-md-6 text-center  pt-3">
 						<div  style="border-radius: 8px;" >
@@ -231,8 +262,82 @@
 			</div>
 		</div>
 	</div>
+
+	<footer  class="mt-5" style="height: 0%; background-color: #214141;" >
+		<div class="container-fluid footer">
+		 <div class="row " style=" background-color: #214141;">
+			 <div class="col-lg-4  mt-2" >
+				 <div class="row gx-0 ">
+						 <div class="col-lg-4  ms-2  ms-md-4 ms-lg-5 ">
+							 <div class="footerlogo d-flex align-items-baseline  mt-4">
+								 <img src="../../assets/images/logotemp.png"  alt="">
+								 <h5 class="fs-1 logodrill">AYDRILL </h5>
+							 </div>
+							 <div  style="letter-spacing: 1em;color:#AB834D;" class="ms-2"> MANAGEMENT</div>
+						 </div>
+						  <div class=" col-lg-8 ms-2 ms-md-4 ms-lg-5  mt-3 ps-lg-3 text-lg-center "> 
+							 <p class=" " style="color: #d8dedf; ">"Designed For Excellence.The Future of Payroll–Effortless and Hassle-Free Payroll."</p>
+						 </div>
+				 </div>
+			  </div>
+			  <div class="col-lg-4   ms-md-4 ms-lg-0 p-lg-3 text-lg-center my-2 my-lg-3 pt-lg-5  ms-lg-0" style="color: #AB834D;"> 
+				 <p  class="fs-4 fw-bold "> Quick Links  </p>
+				 <ul  >
+					 <li><a href="#home" style="color: #d8dedf;"> Home</a></li>
+					 <li><a href="#about" style="color: #d8dedf;">About Us</a></li>
+					 <li><a href="#featurecontent" style="color: #d8dedf;"> Popular Features</a></li>
+					 <li><a onclick="log()" style="color: #d8dedf; cursor: pointer;">Admin</a></li>
+					 <li><a onclick="employee()" style="color: #d8dedf; cursor: pointer;">Employee</a></li>
+					 <!-- <li><a href="login" style="color: #d8dedf;">Log In</a></li> -->
+				 </ul>
+ 
+			  </div> 
+			 <div class="col-lg-4   ms-md-4 ms-lg-0 text-lg-center mt-2 mt-lg-5 " style="color: #d8dedf;">
+				 <div class="row mt-lg-4">
+					 
+					 <div class="col-lg-12 ">
+						 <p  class="fs-5 fw-bold " style="color: #AB834D;"> Call Us On  </p>
+						 <ul>
+							 <li> Toll Free - 18005726671</li>
+							 <li>(Mon - Fri 9:00 AM - 7:00 PM)</li>
+						 </ul>
+					 </div>
+					 <div class="col-lg-12 mt-2 mt-lg-5">
+						 <h4 style="color: #AB834D;"> Contact Us:</h4>
+						   <p>Support - support@paydrillpayroll.com</p>
+					 </div>
+				 </div>
+			  </div>
+		 <div class="row text-lg-center"> 
+			 <div class="ms-md-4 ms-lg-0 text-lg-center">
+				 <h5 style="color: #AB834D;" >Connect with us</h5>
+				 <ul class="d-flex justify-content-lg-center f-icons ">
+					 <li><button class="linkedin ms-1"><i class="fa-brands fa-linkedin-in"></i></button></li>
+					 <li><button class="instagram ms-1"><i class="fa-brands fa-instagram"></i></button></li>
+					 <li><button class="facebook ms-1"><i class="fa-brands fa-facebook-f"></i></button></li>
+					 <li><button class="youtube ms-1"><i class="fa-brands fa-youtube"></i></button></li>
+					 <li><button class="twitter ms-1"><i class="fa-brands fa-square-x-twitter"></i></button></li>    
+				</ul>
+			 </div>
+		 <!-- <div class="row " style="background-color: #0c2325;"> <h1></h1></div> -->
+		</div>
+		<div class="row   text-center  mt-4">
+			<div class="col-lg-12 text-center ">
+				 <h6 style="color: black;">© 2024 Payroll Management System. All rights reserved. Legal Disclaimer | Privacy Policy | Terms of Use</h6>
+			</div>
+		</div>
+	 </footer>
 </body>
 <script>
+
+let target = './assets/admin/Login.html';
+       function employee(){
+            localStorage.setItem("emplogin","1");
+            window.location.href= target;
+       }
+       function log(){
+            window.location.href = target;
+       }
 
 function putdetails(){
 		console.log("done")
@@ -256,6 +361,8 @@ function putdetails(){
 
 
 </script>
+<script type="text/javascript" src="assets\js\main.js"></script>
+<script type="text/javascript" src="assets\js\all.min.js"></script>
 <script type="text/javascript" src="assets\js\bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets\js\all.min.js"></script>
 

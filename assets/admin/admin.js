@@ -57,7 +57,7 @@
         function chpas(){
             // document.getElementsByTagName('button').style=" background-color: #2C5454;"
             // document.querySelector('#b5').style="background-color: #2b7575;"
-            chpass.style="display:block";
+            chpass.style="display:block;";
             dash.style="display:none";
             emp.style="display:none";
             sal.style="display:none";
