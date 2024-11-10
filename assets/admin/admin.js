@@ -165,12 +165,16 @@
                 }
         }
         function loadpage(){
-            document.querySelector('.container').style="display:none;"
+            document.querySelector('.header').style="display:none;"
+		    document.querySelector('.footer').style="display:none;"
+            document.querySelector('.container-fluid').style="display:none;"
             document.querySelector('.loading2').style="display:flex;"
             setTimeout(hideloader,6000);
             function hideloader(){
-                document.querySelector('.loading2').style="display:none;"
-                 document.querySelector('.container').style="display:block;"
+                 document.querySelector('.loading2').style="display:none;"
+                 document.querySelector('.container-fluid').style="display:block; margin-top:7% !important;"
+                 document.querySelector('.header').style="display:block;"
+			     document.querySelector('.footer').style="display:block;"
                  
             }
         }
